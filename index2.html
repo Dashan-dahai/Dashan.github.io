@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的绘画作品集</title>
+    <style>
+        /* 这里是网页的样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #333;
+            color: white;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .artwork {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .artwork img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .artwork:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>欢迎来到我的绘画世界</h1>
+        <p>这里展示我的原创作品</p>
+    </div>
+
+    <div class="gallery">
+        <!-- 在这里添加你的作品 -->
+        <div class="artwork">
+            <img src="painting1.png" alt="作品1">
+            <h3>哪吒1</h3>
+            <p>2023年 水彩画</p>
+        </div>
+
+        <div class="artwork">
+            <img src="painting2.png" alt="作品2">
+            <h3>哪吒2</h3>
+            <p>2024年 数码绘画</p>
+        </div>
+    </div>
+</body>
+</html>
